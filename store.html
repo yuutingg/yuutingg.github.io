@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop - Your Online Pet Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        header {
+            background-color: #fab99d;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo h1 {
+            margin: 0;
+        }
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center-align the menu horizontally */
+            align-items: center;
+            gap: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            border-bottom: 2px solid transparent; /* Add an underline decoration */
+            transition: border-color 0.3s ease-in-out; /* Add a smooth transition effect */
+        }
+
+        .menu a:hover {
+            border-color: #fff; /* Change border color on hover */
+        }
+
+        .featured-products {
+            background-color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .product {
+            background-color: #fee8df;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .product-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #ffaeae;
+            
+        }
+
+        .product-price {
+            color: #0066cc;
+            font-size: 16px;
+        }
+        .add-to-cart {
+            display: inline-flex;
+            align-items: center;
+            background-color: #fab99d;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #ffd8c8;
+        }
+
+        .cart-icon {
+            margin-right: 12px;
+            font-size: 18px;
+        }
+        .sections {
+            display: flex; /* Use flexbox to create side-by-side sections */
+            gap: 20px; /* Add spacing between the sections */
+            margin: 20px; /* Add margin to the sections */
+        }
+        .about,
+        .contact {
+            background-color: #f9f9f9;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e33561103244921.5f48a931911a0.png" width="140" height="110"> 
+        </div>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cat accessories</a></li>
+                <li><a href="#">Dog accessories</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="featured-products">
+        <h2>🐾check up our new arrivals🐾</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://sp.apolloboxassets.com/vendor/product/productImages/2021-04-08/DolOPArray_11.jpg" alt="Product 1" width="180" height="190">
+                <h3 class="product-title">Pet Bed</h3>
+                <p class="product-price">$19.00 - $25.00</p>
+                <p>buy now to get a free carrot toy!</p>
+                <button class="add-to-cart">
+                    <span class="cart-icon">&#128722;</span> <!-- Unicode shopping cart icon -->
+                    Add to Cart
+                </button>
+            </div>
+            <div class="product">
+                <img src="https://www.fortytwo.sg/media/catalog/product/cache/1/image/600x600/040ec09b1e35df139433887a97daa66f/i/m/img_2150_20230508-151516_.jpg" alt="Product 2"width="180" height="210">
+                <h3 class="product-title">Cat House</h3>
+                <p class="product-price">$49.99</p>
+                <p>DIY Wooden Pet House - Fix up a house for your fur kid.</p>
+                <button class="add-to-cart">
+                    <span class="cart-icon">&#128722;</span> <!-- Unicode shopping cart icon -->
+                    Add to Cart
+                </button>
+            </div>
+            <!-- Add more featured products here -->
+        </div>
+    </section>
+
+    <div class="sections">
+        <section class="about">
+            <h2>About Us</h2>
+            <p>Welcome to Pet Shop, your go-to online store for all things pet-related. Our mission is to provide high-quality products to keep your furry friends happy and healthy.</p>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, feel free to reach out to us at <a href="mailto:contact@petshop.com">contact@petshop.com</a>.</p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Pet Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
